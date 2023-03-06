@@ -6,21 +6,16 @@
 <table class="table table-hover table-striped">
   <tr>
     <th>Dashboard</th>
-    <th>Link</th>
+    <!-- <th>Link</th> -->
     <th>Segmento</th>
   </tr>
   {% for row in user.notes %}
   <tr>
-    <td>{{row.Dashboard}}</td>
-    <td>{{row.Link}}</td>
+    <td><a href={{row.Link}} target="_blank">{{row.Dashboard}} </a></td>
+    <!-- <td><a href="url">{{row.Link}}</a> </td> -->
     <td>{{row.Segmento}}</td>
 
   </tr>
   {% endfor %}
 </table>
-
-
- 
-
-
 {% endblock %}
